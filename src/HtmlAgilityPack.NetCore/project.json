@@ -1,6 +1,6 @@
 ﻿{
   "title": "HtmlAgilityPack for .NET Core",
-  "version": "1.4.9.2",
+  "version": "1.5.0.1",
   "summary": "This is an agile HTML parser that builds a read/write DOM and supports plain XPATH or XSLT (you actually don't HAVE to understand XPATH nor XSLT to use it, don't worry...). It is a .NET code library that allows you to parse \"out of the web\" HTML files. The parser is very tolerant with \"real world\" malformed HTML. The object model is very similar to what proposes System.Xml, but for HTML documents (or streams).",
   "description": "This is a port of HtmlAgilityPack library created by Simon Mourrier and Jeff Klawiter for .NET Core platform. This NuGet package supports can be used with Universal Windows Platform, ASP.NET 5 (using .NET Core) and full .NET Framework 4.6.\r\n\r\nOriginal description:\r\n\r\nThis is an agile HTML parser that builds a read/write DOM and supports plain XPATH or XSLT (you actually don't HAVE to understand XPATH nor XSLT to use it, don't worry...). It is a .NET code library that allows you to parse \"out of the web\" HTML files. The parser is very tolerant with \"real world\" malformed HTML. The object model is very similar to what proposes System.Xml, but for HTML documents (or streams).",
   "authors": [ "Zulfahmi Ahmad" ],
@@ -8,41 +8,27 @@
   "projectUrl": "https://github.com/zulfahmi93/HtmlAgilityPack.NetCore",
   "licenseUrl": "",
 
-
   "frameworks": {
     "net45": {
-      "dependencies": { },
+      "dependencies": {},
       "frameworkAssemblies": {
         "System.Xml": "4.0.0.0"
       }
     },
-    "dnx452": {
-      "dependencies": { },
-      "frameworkAssemblies": {
-        "System.Xml": "4.0.0.0"
-      }
-    },
-    "dnxcore50": {
+    "netstandard1.3": {
       "dependencies": {
-        "System.Collections": "4.0.10",
-        "System.Linq": "4.0.0",
-        "System.Threading": "4.0.10",
-        "System.Runtime": "4.0.20",
-        "Microsoft.CSharp": "4.0.0",
-        "System.Text.RegularExpressions": "4.0.10",
-        "System.Xml.XPath": "4.0.0"
+        "System.Collections": "4.0.11",
+        "System.Linq": "4.1.0",
+        "System.Threading": "4.0.11",
+        "System.Runtime": "4.1.0",
+        "System.Text.RegularExpressions": "4.1.0",
+        "System.Xml.XPath": "4.0.1",
+        "System.Diagnostics.Debug": "4.0.11",
+        "System.Runtime.Extensions": "4.1.0",
+        "System.Runtime.InteropServices": "4.1.0"
       }
-    },
-    "dotnet": {
-      "dependencies": {
-        "System.Collections": "4.0.10",
-        "System.Linq": "4.0.0",
-        "System.Threading": "4.0.10",
-        "System.Runtime": "4.0.20",
-        "Microsoft.CSharp": "4.0.0",
-        "System.Text.RegularExpressions": "4.0.10",
-        "System.Xml.XPath": "4.0.0"
-      }
-    }
+    } 
+  },
+  "dependencies": {
   }
 }
