@@ -1655,7 +1655,11 @@ namespace HtmlAgilityPack
 						charset = "utf-8";
 					try
 					{
+#if CodePages
+						_declaredencoding = CodePagesEncodingProvider.Instance.GetEncoding(charset);
+#else
 						_declaredencoding = Encoding.GetEncoding(charset);
+#endif
 					}
 					catch (ArgumentException)
 					{
